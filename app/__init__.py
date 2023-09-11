@@ -6,9 +6,9 @@ from .authentication.routes import auth
 
 from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
-from models import db as root_db, login_manager, ma
+from app.models import db as root_db, login_manager, ma
 from flask_cors import CORS
-from helpers import JSONEncoder
+from app.helpers import JSONEncoder
 
 app = Flask(__name__)
 CORS(app)
